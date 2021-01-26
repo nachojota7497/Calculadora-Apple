@@ -1,0 +1,68 @@
+html{
+    background: linear-gradient(to bottom, #45484D 0%, #000000 100%);
+    background-repeat: no-repeat; 
+    height: 100%;
+}
+h1{
+    text-align: center;
+    color: lavender;
+}
+.calculator{
+    background-color: #282927;
+    width: 300px;
+    height: 475px;
+    margin:0 auto;
+    border-radius: 10px;
+    overflow: hidden;
+    border: 1px solid #000000;
+    text-align: center;
+
+}
+.calculator__screen{
+    width: 90%;
+    height: 100px;
+    font-size: 50px;
+    padding: 0;
+    border: 0;
+    border-radius: 6px;
+    color:azure;
+    text-align: right;
+    background: transparent;
+    font-weight: 700px;
+}
+.calculator__keypad{
+    border-top: 1px black solid;
+
+}
+.btn{
+    background-color: #5d5d5c;
+    width: 75px;
+    height: 75px;
+    float: left; /*esto sirve para que cada boton cuando se acabe el espacio vuelva a la izquierda, la caja en si*/
+    font-size:30px;
+    color: white;
+    font-weight: 300px;
+    border: 0;
+}
+.btn-double{
+    width: 150px;
+    text-align: left;
+    padding-left: 30px;
+}
+.btn-dark{
+    background-color: #3c3c3c;
+
+}
+.btn-orange{
+    background-color: #ff940e;
+}
+btn:nth-child(4n), btn:last-child{
+    border-right: 0;
+
+}  /*:nth-child(4n) dice que cada cuatro elementos, el ultimo es el que selecciona, y luego con last child lo usamos para indicar que sea el 3ro pero del que sigue, sin afectar a los demas*/
+.btn:focus{
+    outline: none;
+}
+.btn:active{
+    opacity: 0.5;
+}
